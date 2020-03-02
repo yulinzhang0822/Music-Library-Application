@@ -43,6 +43,7 @@ This is how I structured my program and you must follow my design for your progr
 Remember that C++ is a one-pass language, so items must be declared BEFORE they are referenced (called). It often works best to write programs upside-down with main function at the bottom of the file, then above it are the functions main calls, then above them are the functions they call, and so on. Otherwise, you will have to repeat the function declaration above their first use. Having the same information in two places makes it difficult to change things while you program.
 
 Write your entire program in one file. At the top of your file, declare the structure for a Song which contains data members for each item you plan to store in a MusicLibrary entry.
+
 #define STRMAX 100
 struct Song {
   char title[STRMAX];
